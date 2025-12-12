@@ -43,8 +43,8 @@ MongoDB installed or cloud access (MongoDB Atlas)
 ▶️ How to Run the Project
 
 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/DigitalAssignment.git
-cd DigitalAssignment
+git clone https://github.com/saumyakhark/AssignEase.git
+cd AssignEase
 
 2️⃣ Install Dependencies (npm install)
 Frontend
@@ -102,8 +102,3 @@ npm run build → Creates production build (optional)
 
 
 Feel free to fork this project and submit pull requests.
-Clear documentation and modular code structure make contributions easy.
-
-**📄 License**
-
-This project is open-source and free to use for learning and academic purposes.
