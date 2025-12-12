@@ -1,0 +1,103 @@
+/* ---------- Body & Container ---------- */
+.student-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Login Card ---------- */
+.student-login-card {
+  background: #e0e5ec;
+  padding: 40px 30px;
+  border-radius: 25px;
+  box-shadow: 15px 15px 30px #babecc,
+              -15px -15px 30px #ffffff;
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 25px #babecc,
+              -10px -10px 25px #ffffff;
+}
+
+/* ---------- Logo ---------- */
+.student-login-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* ---------- Title ---------- */
+.student-login-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* ---------- Inputs & Select ---------- */
+.student-login-card input,
+.student-login-card select {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #e0e5ec;
+  box-shadow: inset 5px 5px 10px #babecc,
+              inset -5px -5px 10px #ffffff;
+  transition: all 0.3s;
+}
+
+.student-login-card input:focus,
+.student-login-card select:focus {
+  box-shadow: inset 3px 3px 6px #babecc,
+              inset -3px -3px 6px #ffffff,
+              0 0 8px rgba(0, 150, 255, 0.3);
+}
+
+/* ---------- Submit Button ---------- */
+.student-login-card button {
+  width: 95%;
+  padding: 12px 15px;
+  margin-top: 15px;
+  border-radius: 15px;
+  border: none;
+  background: #4facfe;
+  background: linear-gradient(145deg, #4facfe, #00f2fe);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #babecc,
+              -5px -5px 10px #ffffff;
+  transition: all 0.3s;
+}
+
+.student-login-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 3px 3px 8px #babecc,
+              -3px -3px 8px #ffffff;
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 400px) {
+  .student-login-card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .student-login-card input,
+  .student-login-card select,
+  .student-login-card button {
+    width: 100%;
+  }
+}
+
+

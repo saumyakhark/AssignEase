@@ -1,0 +1,67 @@
+/* Container for the whole marks page */
+.student-marks-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #ffffff, #e0f7fa);
+  border-radius: 20px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), 
+              -8px -8px 20px rgba(255, 255, 255, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s;
+}
+
+.student-marks-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.student-marks-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #00796b;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Table style */
+.student-marks-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* adds spacing between rows for 3D effect */
+}
+
+.student-marks-table th,
+.student-marks-table td {
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  background-color: #ffffff;
+}
+
+/* Header */
+.student-marks-table th {
+  background: linear-gradient(to right, #26c6da, #00acc1);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
+}
+
+/* Table rows hover */
+.student-marks-table tbody tr:hover td {
+  background-color: #b2ebf2;
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Marks missing / no evaluated submissions */
+.no-marks {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-top: 30px;
+  font-weight: 500;
+}

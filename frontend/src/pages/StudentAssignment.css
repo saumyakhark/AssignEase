@@ -1,0 +1,145 @@
+/* Page Container */
+.assign-page-container {
+  padding: 40px;
+  background: #eef3ff;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page Title */
+.assign-title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  color: #1d2b5e;
+  margin-bottom: 30px;
+}
+
+/* No assignments message */
+.no-assign-msg {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+  color: #555;
+}
+
+/* ---------------- Assignment Card (3D) ---------------- */
+.assign-card {
+  background: #eef3ff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.15), 
+              -8px -8px 20px rgba(255,255,255,0.7);
+  transition: all 0.3s ease;
+}
+
+.assign-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.2), 
+              -6px -6px 15px rgba(255,255,255,0.8);
+}
+
+/* Assignment Header */
+.assign-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.assign-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d2b5e;
+}
+
+.assign-date {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Assignment Text */
+.assign-text {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Download Button */
+.assign-download-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #eef3ff;
+  color: #354bcc;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.15), 
+              -4px -4px 10px rgba(255,255,255,0.7);
+  transition: all 0.3s ease;
+}
+
+.assign-download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2), 
+              -2px -2px 8px rgba(255,255,255,0.8);
+  color: #1d2b5e;
+}
+
+/* ---------------- Assignment Editor (3D Neumorphic) ---------------- */
+.typing-area {
+  margin-top: 40px;
+}
+
+.typing-area h3 {
+  font-size: 22px;
+  color: #1d2b5e;
+  margin-bottom: 15px;
+}
+
+/* Textarea */
+.assignment-editor {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 20px;
+  background: #eef3ff;
+  border: none;
+  box-shadow: inset 6px 6px 15px rgba(0,0,0,0.1), 
+              inset -6px -6px 15px rgba(255,255,255,0.7);
+  transition: all 0.3s ease;
+  resize: vertical;
+}
+
+.assignment-editor:focus {
+  outline: none;
+  box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2), 
+              inset -4px -4px 10px rgba(255,255,255,0.8);
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #eef3ff;
+  color: #354bcc;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.15), 
+              -6px -6px 15px rgba(255,255,255,0.7);
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.2), 
+              -4px -4px 12px rgba(255,255,255,0.8);
+  color: #1d2b5e;
+}
+

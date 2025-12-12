@@ -1,0 +1,96 @@
+/* ---------- Body & Container ---------- */
+.student-dashboard-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(145deg, #e0f7fa, #f1f8e9);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Dashboard Title ---------- */
+.dashboard-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* ---------- Input Blocks ---------- */
+.input-block {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-block label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.input-block select {
+  width: 60%;
+  max-width: 300px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05),
+              inset -2px -2px 5px rgba(255,255,255,0.7);
+  transition: all 0.3s;
+}
+
+.input-block select:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 10px rgba(79, 172, 254, 0.4);
+}
+
+/* ---------- Dashboard Sections ---------- */
+.dashboard-sections {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Dashboard Cards ---------- */
+.dashboard-card {
+  background: #fff;
+  width: 200px;
+  padding: 25px 15px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dashboard-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 600px) {
+  .dashboard-card {
+    width: 150px;
+    padding: 20px 10px;
+  }
+  .input-block select {
+    width: 80%;
+  }
+}
+
+
+

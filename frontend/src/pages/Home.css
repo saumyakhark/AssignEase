@@ -1,0 +1,151 @@
+/* ======================================================
+   BACKGROUND SETUP
+====================================================== */
+.home-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  perspective: 1200px;
+  overflow: hidden;
+}
+
+/* TOP APPLICATION HEADER */
+.app-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 18px 0;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  z-index: 10;
+}
+
+/* MAIN CARD */
+.home-card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 50px 40px;
+  border-radius: 20px;
+  width: 400px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  animation: fadeIn 0.8s ease-in-out;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-8px) rotateX(2deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
+}
+
+/* TITLES */
+.home-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.home-subtitle {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-bottom: 30px;
+  color: #e0e0ff;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+/* BUTTONS */
+.home-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.home-btn {
+  display: block;
+  padding: 14px 0;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  transform-style: preserve-3d;
+}
+
+/* BUTTON COLORS */
+.home-btn.student {
+  background: linear-gradient(145deg, #4caf50, #43a047);
+  color: white;
+}
+
+.home-btn.teacher {
+  background: linear-gradient(145deg, #2196f3, #1e88e5);
+  color: white;
+}
+
+.home-btn.admin {
+  background: linear-gradient(145deg, #f44336, #e53935);
+  color: white;
+}
+
+/* BUTTON HOVER EFFECT */
+.home-btn:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.45);
+  filter: brightness(1.15);
+}
+
+/* 3D PULSE ON CLICK */
+.home-btn:active {
+  transform: translateY(-2px) scale(0.98);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .home-card {
+    width: 90%;
+    padding: 35px 20px;
+  }
+
+  .home-title {
+    font-size: 28px;
+  }
+
+  .home-subtitle {
+    font-size: 14px;
+  }
+
+  .home-btn {
+    font-size: 15px;
+  }
+}
