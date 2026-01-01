@@ -1,6 +1,7 @@
 DigitalAssignment is a web platform designed for students to create, upload, manage, and access digital notes and assignments.
 It provides a clean interface, fast searching, and organized subject-wise note storage to make study material accessible anytime.
 
+
 **🚀 Features**
 
 Upload and organize notes/assignments
